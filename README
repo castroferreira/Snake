@@ -1,0 +1,45 @@
+
+## Requirements:
+
+To run the game you need:
+
+* Python >= 3.5
+* pygame >= 1.9.2b6
+
+Python 3.5+ should be installed in any relatively recent Linux distribution.
+To install pygame for python3 you may try using pip3:
+    sudo pip3 install pygame
+
+## Agent Class naming:
+
+The student agent class must be defined in a file with the same name in
+lowercase.  For example:
+
+    File: studentagent.py
+    ---------------------
+    class StudentAgent(Agent):
+        ...
+
+
+## How to configure a remote (upstream) repository in git:
+
+You probably created your own git repository to manage your project
+(this is recommended).
+Then, it's a good idea to configure the original professors repository 
+as a remote (upstream) repository.
+This will allow you to fetch any changes made in the upstream and merge them
+into your branch.
+To configure the remote repository, go to your local project and:
+
+    git remote add upstream https://code.ua.pt/git/tpg-ia-iia-longlife
+
+More info in: https://help.github.com/articles/configuring-a-remote-for-a-fork/
+
+Now, whenever you need to incorporate changes made upstream, do:
+
+    git fetch upstream
+    git checkout master         # (or another branch, if you defined any)
+    git merge upstream/master
+
+More info in: https://help.github.com/articles/syncing-a-fork/
+
